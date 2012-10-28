@@ -1,0 +1,74 @@
+/**
+ * @author      Tom Hartung <webmaster@tomhartung.com>
+ * @package     Joomla
+ * @subpackage  joomoorating
+ * @copyright   Copyright (C) 2008 Tom Hartung. All rights reserved.
+ * @since       1.5
+ * @license     GNU/GPL, see LICENSE.php
+ */
+
+/*
+ * Styles for the joomoorating plugin
+ */
+h4.joomoorating
+{
+	margin-top:     6px;
+	margin-left:   10px;
+	margin-bottom:  0px;
+}
+div.the_joomoorating
+{
+	margin:     6px;
+}
+p.joomoorating
+{
+	margin-top:     6px;
+	margin-left:   20px;
+	margin-bottom:  0px;
+}
+span.joomoorating_current_value,
+span.joomoorating_vote_count
+{
+	font-weight: bold;
+}
+td.joomoorating_vote_count
+{
+	text-align: center;
+}
+/*
+ * Styles for the rating bars
+ */
+table.joomoorating_bars
+{
+	margin:     12px auto 0px auto;
+	padding:    0px;
+}
+td.joomoorating_bar,
+img.joomoorating_bar
+{
+	margin:     0px;
+	padding:    0px;
+}
+a.joomoorating_bar:hover
+{
+	border: white solid 2px;
+	margin:     2px;
+	padding:    2px;
+}
+td.joomoorating_yourvote
+{
+	margin:     2px;
+	padding:    2px;
+	text-align: center;
+}
+.joomoorating_js_off
+{
+	border: solid 1px red;
+	color:  red;
+	font-size:   14px;
+	padding: 4px;
+/*	margin-top:   0px;
+	margin-left: 10px;
+*/
+}
+

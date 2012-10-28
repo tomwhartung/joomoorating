@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content">
+	<name>plg_content_joomoofixedrating</name>
+	<author>Tom Hartung</author>
+	<creationDate>December 2009</creationDate>
+	<copyright>Copyright (C) 2009 - 2012 Tom Hartung. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>webmaster@tomhartung.com</authorEmail>
+	<authorUrl>www.tomhartung.com</authorUrl>
+	<version>1.7</version>
+	<description>Plugin to display a fixed, constant, predetermined rating of joomla content articles and joomoo gallery images</description>
+	<files>
+		<filename plugin="joomoofixedrating">joomoofixedrating.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="rating_label" type="text" default="Rating" label="Default Label for Rating"
+					description="Default description of rating.  Overridable in placeholder.">
+				</field>
+				<field name="rating_subtitle" type="text" default="Voting disabled for this article" label="Default Rating Subtitle"
+					description="Text to appear beneath rating bars eg. to explain that they are disabled and maybe why.">
+				</field>
+				<field name="rating_value" type="list" default="10" label="Rating Value"
+					description="Constant rating value for all articles and gallery images using this plugin">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</field>
+				<field name="rating_bar_color" type="list" default="w" label="Bar Color"
+					description="Color of rating bars.  Idea: choose black or white because these are not active">
+					<option value="n">Black</option>
+					<option value="b">Blue</option>
+					<option value="g">Green</option>
+					<option value="r">Red</option>
+					<option value="y">Yellow</option>
+					<option value="w">White</option>
+				</field>
+				<field name="rating_bar_background" type="list" default="t" label="Bar Background"
+					description="Color - or lack thereof - used for background of rating bars">
+					<option value="n">Black</option>
+					<option value="t">Transparent</option>
+					<option value="w">White</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

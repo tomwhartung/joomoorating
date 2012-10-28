@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Joomoo Rating">
+		<message>
+			<![CDATA[This component allows users to rate content articles and joomoogallery images]]>
+		</message>
+	</layout>
+	<state>
+		<name>Joomoo Rating</name>
+		<description>Component allowing users to rate content articles and joomoogallery images</description>
+	</state>
+</metadata>

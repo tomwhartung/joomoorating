@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="content">
+	<name>plg_content_joomoorating</name>
+	<author>Tom Hartung</author>
+	<creationDate>December 2009</creationDate>
+	<copyright>Copyright (C) 2009 - 2012 Tom Hartung. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>webmaster@tomhartung.com</authorEmail>
+	<authorUrl>www.tomhartung.com</authorUrl>
+	<version>1.7</version>
+	<description>Plugin to implement rating of joomla content articles and joomoo gallery images</description>
+	<files>
+		<filename plugin="joomoorating">joomoorating.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="all_articles" type="radio" default="1" label="Allow rating of all articles?"
+					description="Show rating for all articles or use placeholder for specific articles?">
+					<option value="1">All articles</option>
+					<option value="0">Use placeholder</option>
+				</field>
+				<field name="rating_label" type="text" default="Rating" label="Label for rating"
+					description="Description of rating">
+				</field>
+				<field name="rating_bar_color" type="list" default="w" label="Bar Color"
+					description="Color of rating bars.  Idea: if using joomoositestyle, choose the same color used for links.">
+					<option value="n">Black</option>
+					<option value="b">Blue</option>
+					<option value="g">Green</option>
+					<option value="r">Red</option>
+					<option value="y">Yellow</option>
+					<option value="w">White</option>
+				</field>
+				<field name="rating_bar_background" type="list" default="t" label="Bar Background"
+					description="Color - or lack thereof - used for background of rating bars">
+					<option value="n">Black</option>
+					<option value="t">Transparent</option>
+					<option value="w">White</option>
+				</field>
+				<field name="where_in_article" type="radio" default="b" label="Location in content article"
+						description="Where to show article rating - used only when article does not have placeholder">
+					<option value="a">Above article</option>
+					<option value="b">Below article</option>
+				</field>
+				<field name="where_on_gallery_page" type="list" default="b" label="Location on gallery page"
+						description="Where to show gallery image rating - used only when gallery image description does not have placeholder">
+					<option value="a">Above image</option>
+					<option value="b">Below image</option>
+					<option value="d">Below description</option>
+				</field>
+				<field name="hover_width_bump" type="list" default="2" label="Hover width bump"
+					description="Number of pixels to add to bar width when user hovers mouse over it">
+					<option value="1">1px</option>
+					<option value="2">2px</option>
+					<option value="3">3px</option>
+					<option value="4">4px</option>
+					<option value="5">5px</option>
+					<option value="7">7px</option>
+					<option value="8">8px</option>
+					<option value="10">10px</option>
+					<option value="12">12px</option>
+					<option value="15">15px</option>
+				</field>
+				<field name="ajax_or_full" type="list" default="E" label="Use Ajax or Full request?"
+					description="Use ajax or full request to save and delete comments?  Specify Either to allow Full when user has javascript disabled.">
+					<option value="A">Use Ajax request only</option>
+					<option value="F">Use Full request only</option>
+					<option value="E">Allow Either Ajax or Full</option>
+				</field>
+				<field name="allow_anonymous" type="radio" default="0" label="Anonymous votes?"
+					description="Allow users who aren't logged in to vote on articles and gallery images?">
+					<option value="1">OK</option>
+					<option value="0">Disallow</option>
+				</field>
+				<field name="max_consecutive_ratings" type="list" default="1" label="Maximum Consecutive Votes"
+					description="Max times a user can vote on a single article or gallery image between page reloads">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="10">10</option>
+					<option value="12">12</option>
+					<option value="15">15</option>
+					<option value="20">20</option>
+					<option value="u">Unlimited</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="rating_description_1" type="text" default="Very Low" label="Rating Desc 1"
+					description="Description of rating value 1"></field>
+				<field name="rating_description_2" type="text" default="Fairly Low" label="Rating Desc 2"
+					description="Description of rating value 2"></field>
+				<field name="rating_description_3" type="text" default="Low" label="Rating Desc 3"
+					description="Description of rating value 3"></field>
+				<field name="rating_description_4" type="text" default="Somewhat Low" label="Rating Desc 4"
+					description="Description of rating value 4"></field>
+				<field name="rating_description_5" type="text" default="Medium Low" label="Rating Desc 5"
+					description="Description of rating value 5"></field>
+				<field name="rating_description_6" type="text" default="Medium High" label="Rating Desc 6"
+					description="Description of rating value 6"></field>
+				<field name="rating_description_7" type="text" default="Somewhat High" label="Rating Desc 7"
+					description="Description of rating value 7"></field>
+				<field name="rating_description_8" type="text" default="High" label="Rating Desc 8"
+					description="Description of rating value 8"></field>
+				<field name="rating_description_9" type="text" default="Fairly High" label="Rating Desc 9"
+					description="Description of rating value 9"></field>
+				<field name="rating_description_10" type="text" default="Very High" label="Rating Desc 10"
+					description="Description of rating value 10"></field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
